@@ -1,4 +1,4 @@
-from fastapi import FastApi, Query
+from fastapi import FastAPI, Query
 from fastapi.middleware.cors import CORSMiddleware
 from typing import List
 
