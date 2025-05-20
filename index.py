@@ -17,7 +17,7 @@ students_data = [{"name":"fgIxp","marks":33},{"name":"8uAyS7pT","marks":2},{"nam
 # Create dictionary for O(1) lookup
 students_marks = {student['name']: student['marks'] for student in students_data}
 
-@app.get("/api")
+@app.get("/")
 async def get_marks(name: List[str] = Query(...)):
     # Return marks or None if student not found
     result = [students_marks.get(n, None) for n in name]
